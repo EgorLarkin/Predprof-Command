@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Виртуальные окружения
+venv/
+env/
+.venv/
+
+# Flask / SQLite
+instance/
+*.db
+uploads/
+
+# TensorFlow / Keras — большие файлы модели (хранить отдельно)
+# ml/model.keras
+# ml/model.h5
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Данные (большой файл — не коммитить)
+*.npz

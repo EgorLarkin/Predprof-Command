@@ -1,0 +1,105 @@
+/* AlienSignal AI — стили приложения */
+
+body {
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+.card-header {
+    font-weight: 600;
+    padding: 12px 20px;
+}
+
+.card-body canvas {
+    max-height: 400px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #5a6fd1 0%, #6a4291 100%);
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    border: none;
+}
+
+.btn-success:hover {
+    background: linear-gradient(135deg, #0e8a7f 0%, #2fd86e 100%);
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+    border-color: #667eea;
+}
+
+.alert {
+    border-radius: 10px;
+    border: none;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 15px;
+}
+
+.stat-card .stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.stat-card .stat-label {
+    font-size: 0.85rem;
+    color: #666;
+    text-transform: uppercase;
+}
+
+footer {
+    border-top: 1px solid #dee2e6;
+    padding-top: 15px;
+}
+
+code {
+    background: #e9ecef;
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #d63384;
+}
+
+/* Анимация загрузки */
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.loading {
+    animation: pulse 1.5s ease-in-out infinite;
+}
